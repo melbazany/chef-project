@@ -1,4 +1,24 @@
+@use '../abstracts/' as *;
+
+// NOTE: Must use interpolation because the Sass variables
+// could be of any type, and the custom props don't know if they're a
+// string, int, etc...
+
 .container {
-    width: min(100% - 2rem, 60rem);
-    margin-inline: auto;
-  }
+
+  --padding: #{$container-inline-padding} * 2;
+  --max-width: #{$container-max-width};
+
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+.container[data-type="wide"] {
+  --max-width: #{$container-max-width-wide};
+}
+
+// Not used, but useful
+.container[data-type="full-bleed"] {
+  --padding: 0;
+  --max-width: 100%;
+}

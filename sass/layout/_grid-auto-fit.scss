@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.grid-auto-fit {
+    display: grid;
+    gap: var(--grid-gap, $grid-gap);
+
+    // Tell the browser to decide on how to size these - which makes more sense,
+    // 250px or 1fr? (If we didn't have the min() func and just had 250px there
+    // But at super small screens, we'd get overflow if 250px was too small - so we 
+    // use the min() to make sure content sizes down to fill 100% of its width instead of 
+    // a minimum of 250px wide
+    // min() - what is the MAX value that this can be
+    // max() - what's the MIN value that this can be
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
