@@ -2,6 +2,9 @@
 
 <a href="https://recipes-by-mel.netlify.app/">Forkify app<a/>
 
+<img width="600" alt="Screenshot 2023-03-12 at 2 23 02 PM" src="https://user-images.githubusercontent.com/75503142/224564518-d111b398-e0b1-4979-832f-c0567b8dde1d.png">
+
+
 This app searches a variety of recipe databases to allow users to search for recipes,
 add custom recipes, and bookmark their favorites.
 
