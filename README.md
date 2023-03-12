@@ -1,4 +1,4 @@
-# "Forkify" - Recipe Website Search Tool
+# Recipes by Mel - "Forkify" - Recipe Search Tool
 
 <a href="https://recipes-by-mel.netlify.app/">Forkify app<a/>
 
