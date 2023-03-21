@@ -1,6 +1,6 @@
 # Recipes by Mel - "Forkify" - Recipe Search Tool
 
-<a href="https://recipes-by-mel.netlify.app/">Forkify app<a/>
+https://recipes-by-mel.netlify.app/
 
 <img width="600" alt="Screenshot 2023-03-12 at 2 23 02 PM" src="https://user-images.githubusercontent.com/75503142/224564518-d111b398-e0b1-4979-832f-c0567b8dde1d.png">
 
