@@ -3,11 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/sass/main.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
     <title>Vite App</title>
   </head>
   <body>
+    <header class="primary-header bg-neutral-900 margin-block-start-24">
+      <img class="logo | mx-auto" src="/assets/logo.svg" alt="Chef logo"/>
+      <nav class="primary-navigation | margin-block-start-24">
+        <ul class="flex-group mx-auto">
+          <li><a href="#about">About</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero | bg-neutral-900 clr-neutral-100 text-center">
+        <div class="container">
+          <h1 class="fs-900 ff-accent margin-block-end-48">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam dignissimos possimus autem reprehenderit fuga commodi iste deserunt inventore libero voluptate, tempore vero officiis quo provident. Eius nisi adipisci culpa.</h1>
+          <button class="button" data-type="accent">Place order</button>
+          <a href="#about" class="button" data-type="outline">More info</a>
+        </div>
+      </section>
+
+
+      <section class="section" id="about">
+        <div class="container">
+      
+          <div class="even-columns">
+            <div><img class="shift-up box-shadow-1" src="" alt=""></div>
+            <div></div>
+          </div>
+      
+        </div>
+      </section>
+
+    </main>
+    <footer></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
