@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.section-heading {
+    // if we have a <p> acting as the subtitle,
+    // IMPORTANT: *** add a margin-bottom to the .section-heading, NOT the p***
+    &:has(p) {
+        margin-block-end: size(36);
+    }
+    // If there isn't a <p> as a subtitle,
+    &:not(:has(p)) {
+        margin-block-end: size(36) * 2.5;
+    }
+
+    &[data-decoration="true"]::after {
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 1px;    
+        background-color: currentColor;
+        margin-block-start: size(36);
+
+        // If the section heading has the class of 'text-center',
+        // and there is an el with [data-dec='true'], center the accent line
+        // to match the text
+        .text-center & {
+        margin-inline: auto;
+        }
+    }
+}

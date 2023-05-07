@@ -1,4 +1,4 @@
-@use 'functions' as *;
+// @use "functions" as *;
 
 $sizes: (
   8: 0.5rem,
@@ -6,8 +6,12 @@ $sizes: (
   16: 1rem,
   20: 1.25rem,
   24: 1.5rem,
+  28: 1.75rem,
   32: 2rem,
   36: 2.25rem,
+  40: 2.5rem,
+  44: 2.75rem,
+  48: 3rem,
 );
 
 $hero-padding: 20rem;
@@ -18,6 +22,6 @@ $card-body-padding: 5rem;
 $grid-gap: size(24);
 $flex-group-gap: size(16);
 
-$container-inline-padding: size(16);
+$container-inline-padding: 1rem;
 $container-max-width: 77.75rem;
 $container-max-width-wide: 100rem;
